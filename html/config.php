@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
-$username = "baguss"; // Change if necessary
+$host     = "127.0.0.1";
+$username = "baguss";            // Change if necessary
 $password = "b46usscodespace20"; // Change if necessary
-$dbname = "db_quranmuslim";
+$dbname   = "db_quranmuslim";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
@@ -12,4 +12,3 @@ try {
     echo json_encode(["status" => "error", "message" => "Database connection failed"]);
     exit;
 }
-?>
