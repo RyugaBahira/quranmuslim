@@ -20,8 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // === Konfigurasi Auth ===
-define('AUTH_USERNAME', 'baguss');
-define('AUTH_PASSWORD', '$#ryug4b4hir4#$');
+define('AUTH_USERNAME', getenv('AUTH_USERNAME') ?: '');
+define('AUTH_PASSWORD', getenv('AUTH_PASSWORD') ?: '');
 
 // === File data ===
 $dataFile = 'ebook_gratis.json';
