@@ -1,5 +1,9 @@
+name: php-api
 services:
-  - name: php-api
+  - name: php-service
     ports:
       - port: 80
         http: true
+    routes:
+      - name: public
+        path: /
