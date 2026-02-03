@@ -21,8 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 // === Konfigurasi Auth ===
 $env = require __DIR__ . 'image/env.php';
-define('AUTH_USERNAME', getenv('AUTH_USERNAME') ?: '');
-define('AUTH_PASSWORD', getenv('AUTH_PASSWORD') ?: '');
+define('AUTH_USERNAME', $env['AUTH_USERNAME']);
+define('AUTH_PASSWORD', $env['AUTH_PASSWORD']);
 
 // === File data ===
 $dataFile = 'ebook_gratis.json';
