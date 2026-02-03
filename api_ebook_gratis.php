@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // === Konfigurasi Auth ===
-$env = require __DIR__ . 'image/env.php';
+$env = require 'image/env.php';
 define('AUTH_USERNAME', $env['AUTH_USERNAME']);
 define('AUTH_PASSWORD', $env['AUTH_PASSWORD']);
 
